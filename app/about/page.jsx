@@ -78,8 +78,8 @@ export default function About() {
                   <span className="date">2016-2017</span>
                   <h4>Kariyer Mimarı ve Bilişim Teknolojileri Akademi</h4>
                   <p>
-                    3D Studio Max · AutoCAD · SketchUp · AutoCAD Mimarisi ·
-                    Mimari Tasarım · Photoshop
+                    3D Studio Max AutoCAD SketchUp AutoCAD Mimarisi Mimari
+                    Tasarım Photoshop
                   </p>
                 </li>
                 <li>
@@ -95,7 +95,7 @@ export default function About() {
                 <li>
                   <span className="date">2024</span>
                   <h4>Acunmedya Akademi</h4>
-                  <p>HTML· CSS · Javascript · React· Next.jsx ·</p>
+                  <p>HTML CSS Javascript React Next.jsx </p>
                 </li>
 
                 <li>
