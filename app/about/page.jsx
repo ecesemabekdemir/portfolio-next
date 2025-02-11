@@ -64,7 +64,11 @@ export default function About() {
                 functional and accessible.
               </p>
 
-              <Link href={"/dosya/semabekdemir.pdf"} className="cv-button">
+              <Link
+                target="_blank"
+                href={"/dosya/sema.pdf"}
+                className="cv-button"
+              >
                 <span className="button-text">
                   CV
                   <Download className="download-icon" />
@@ -76,21 +80,21 @@ export default function About() {
               <ul className="timeline">
                 <li>
                   <span className="date">2016-2017</span>
-                  <h4>Kariyer Mimarı ve Bilişim Teknolojileri Akademi</h4>
+                  <h4>Career Architect and Information Technologies Academy</h4>
                   <p>
-                    3D Studio Max AutoCAD SketchUp AutoCAD Mimarisi Mimari
-                    Tasarım Photoshop
+                    3D Studio Max AutoCAD SketchUp AutoCAD Architecture
+                    Architecture Design Photoshop
                   </p>
                 </li>
                 <li>
                   <span className="date">2016-2018</span>
-                  <h4>İstanbul Gelişim Üniversitesi</h4>
-                  <p>İnşaat Mühendisliği Teknolojileri/Teknisyen</p>
+                  <h4>İstanbul Gelişim university</h4>
+                  <p>Civil Engineering Technologies/Technician</p>
                 </li>
                 <li>
                   <span className="date">2023</span>
-                  <h4>İstanbul Üniversitesi</h4>
-                  <p>Bilgisayar Programcılığı</p>
+                  <h4>İstanbul university</h4>
+                  <p>Computer Programming</p>
                 </li>
                 <li>
                   <span className="date">2024</span>
@@ -99,11 +103,14 @@ export default function About() {
                 </li>
 
                 <li>
-                  <span className="date">Present</span>
-                  <h4>Continuing to Grow and Innovate</h4>
+                  <span className="date">2025</span>
+                  <h4>I Continue to Grow and Innovate</h4>
                   <p>
-                    Constantly learning and applying new technologies to create
-                    better web experiences.
+                    We are always exploring and implementing new technologies to
+                    deliver better web experiences. I am currently working on a
+                    project called Koza. In this project, we aim to develop
+                    innovative and effective solutions that address the needs of
+                    users.
                   </p>
                 </li>
               </ul>
