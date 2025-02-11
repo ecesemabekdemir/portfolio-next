@@ -4,73 +4,20 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Github, ExternalLink, Mail, Linkedin } from "lucide-react";
 import "./projects.css";
-const projectsData = [
-  {
-    id: 1,
-    title: "advice-generator-app",
-    description:
-      "A full-stack e-commerce solution built with Next.js and Stripe integration.",
-    image: "/img/advice.png",
-    category: "Full Stack",
-    githubLink: "https://github.com",
-    liveLink: "https://advice-generator-app-hazel-ten.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Electronic-products-list",
-    description:
-      "A responsive portfolio website showcasing my projects and skills.",
-    image: "/img/satis.png",
-    category: "Frontend",
-    githubLink: "https://github.com",
-    liveLink: "https://electronic-products-list.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Figma Learning Page",
-    description:
-      "A React-based task management application with drag-and-drop functionality.",
-    image: "/img/learn.png",
-    category: "CSS",
-    githubLink: "https://github.com",
-    liveLink: "https://learning-figma.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "Audiophile",
-    description:
-      "A weather dashboard that fetches and displays real-time weather data.",
-    image: "/img/audiophile.png",
-    category: "CSS",
-    githubLink: "https://github.com",
-    liveLink: "https://audiophile-mu-three.vercel.app/",
-  },
-  ,
-  {
-    id: 5,
-    title: "Linkedln Clone",
-    description:
-      "A professional network platform that replicates core LinkedIn features, allowing users to connect, share updates, and manage their profiles",
-    image: "/img/linkedln.png",
-    category: "Full Stack",
-    githubLink: "https://github.com",
-    liveLink: "https://linkedln-clone-umber.vercel.app/linked",
-  },
-  // Add more projects as needed
-];
+import data from "./data.json";
 
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false);
   const [filter, setFilter] = useState("All");
-  const [filteredProjects, setFilteredProjects] = useState(projectsData);
+  const [filteredProjects, setFilteredProjects] = useState(data);
 
   useEffect(() => {
     setIsVisible(true);
     if (filter === "All") {
-      setFilteredProjects(projectsData);
+      setFilteredProjects(data);
     } else {
       setFilteredProjects(
-        projectsData.filter((project) => project.category === filter)
+        data.filter((project) => project.category === filter)
       );
     }
   }, [filter]);
@@ -85,8 +32,14 @@ export default function Projects() {
               Showcasing My Web Development Journey
             </h2>
             <p className="hero-description">
-              Explore a collection of my projects, ranging from frontend designs
-              to full-stack applications.
+              Explore a diverse collection of my projects, showcasing a range of
+              skills from sleek frontend designs to robust full-stack
+              applications. Each project reflects my passion for creating
+              user-friendly, responsive websites and applications, with a focus
+              on modern technologies such as React, Bootstrap, and more. Whether
+              it's building interactive interfaces or developing complete,
+              end-to-end solutions, this portfolio demonstrates my journey and
+              expertise in the world of web development.
             </p>
           </div>
           <div className="hero-image-container">

@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "advice-generator-app",
+    "description": "A full-stack e-commerce solution built with Next.js and Stripe integration.",
+    "image": "/img/advice.png",
+    "category": "Full Stack",
+    "githubLink": "https://github.com",
+    "liveLink": "https://advice-generator-app-hazel-ten.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "Electronic-products-list",
+    "description": "A responsive portfolio website showcasing my projects and skills.",
+    "image": "/img/satis.png",
+    "category": "Frontend",
+    "githubLink": "https://github.com",
+    "liveLink": "https://electronic-products-list.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "Figma Learning Page",
+    "description": "A React-based task management application with drag-and-drop functionality.",
+    "image": "/img/learn.png",
+    "category": "CSS",
+    "githubLink": "https://github.com",
+    "liveLink": "https://learning-figma.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "Audiophile",
+    "description": "A weather dashboard that fetches and displays real-time weather data.",
+    "image": "/img/audiophile.png",
+    "category": "CSS",
+    "githubLink": "https://github.com",
+    "liveLink": "https://audiophile-mu-three.vercel.app/"
+  },
+  {
+    "id": 5,
+    "title": "Linkedln Clone",
+    "description": "A professional network platform that replicates core LinkedIn features, allowing users to connect, share updates, and manage their profiles",
+    "image": "/img/linkedln.png",
+    "category": "Full Stack",
+    "githubLink": "https://github.com/ecesemabekdemir/linkedln-clone",
+    "liveLink": "https://linkedln-clone-umber.vercel.app/linked"
+  }
+  ,
+  {
+    "id": 5,
+    "title": "Website App",
+    "description": "A professional network platform built with React and Bootstrap, featuring a customizable dark mode and a user-friendly dashboard for managing profiles and connecting with others.",
+    "image": "/img/websiteapp.jpeg",
+    "category": "CSS",
+    "githubLink": "https://github.com/ecesemabekdemir/websiteApp",
+    "liveLink": "https://website-app-sandy.vercel.app/"
+  }
+]
