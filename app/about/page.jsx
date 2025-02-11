@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
+import { Download } from "lucide-react";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -62,41 +63,41 @@ export default function About() {
                 websites that are not only visually appealing but also highly
                 functional and accessible.
               </p>
+
+              <Link href={"/dosya/semabekdemir.pdf"} className="cv-button">
+                <span className="button-text">
+                  CV
+                  <Download className="download-icon" />
+                </span>
+              </Link>
             </div>
             <div className="about-timeline">
               <h3>My Journey</h3>
               <ul className="timeline">
                 <li>
-                  <span className="date">2015</span>
-                  <h4>Began studies in Interior Architecture</h4>
+                  <span className="date">2016-2017</span>
+                  <h4>Kariyer Mimarı ve Bilişim Teknolojileri Akademi</h4>
                   <p>
-                    Developed a strong foundation in design principles and
-                    spatial thinking.
+                    3D Studio Max · AutoCAD · SketchUp · AutoCAD Mimarisi ·
+                    Mimari Tasarım · Photoshop
                   </p>
                 </li>
                 <li>
-                  <span className="date">2018</span>
-                  <h4>Discovered Web Development</h4>
-                  <p>
-                    Started learning HTML, CSS, and JavaScript in my free time.
-                  </p>
+                  <span className="date">2016-2018</span>
+                  <h4>İstanbul Gelişim Üniversitesi</h4>
+                  <p>İnşaat Mühendisliği Teknolojileri/Teknisyen</p>
                 </li>
                 <li>
-                  <span className="date">2020</span>
-                  <h4>Transitioned to Frontend Development</h4>
-                  <p>
-                    Began focusing full-time on web development, specializing in
-                    frontend technologies.
-                  </p>
+                  <span className="date">2023</span>
+                  <h4>İstanbul Üniversitesi</h4>
+                  <p>Bilgisayar Programcılığı</p>
                 </li>
                 <li>
-                  <span className="date">2022</span>
-                  <h4>Mastered React and Next.js</h4>
-                  <p>
-                    Deepened my expertise in modern JavaScript frameworks and
-                    server-side rendering.
-                  </p>
+                  <span className="date">2024</span>
+                  <h4>Acunmedya Akademi</h4>
+                  <p>HTML· CSS · Javascript · React· Next.jsx ·</p>
                 </li>
+
                 <li>
                   <span className="date">Present</span>
                   <h4>Continuing to Grow and Innovate</h4>
