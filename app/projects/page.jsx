@@ -37,7 +37,7 @@ export default function Projects() {
               applications. Each project reflects my passion for creating
               user-friendly, responsive websites and applications, with a focus
               on modern technologies such as React, Bootstrap, and more. Whether
-              it's building interactive interfaces or developing complete,
+              it s building interactive interfaces or developing complete,
               end-to-end solutions, this portfolio demonstrates my journey and
               expertise in the world of web development.
             </p>
