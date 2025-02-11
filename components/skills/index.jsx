@@ -9,9 +9,8 @@ export default function Skills() {
             {[
               "Frontend Development",
               "Responsive Design",
-              "UI/UX Design",
               "React & Next.js",
-              "JavaScript/TypeScript",
+              "JavaScript",
               "CSS & Animation",
             ].map((skill) => (
               <div key={skill} className="skill-card">
