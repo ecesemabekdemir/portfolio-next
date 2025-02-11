@@ -1,0 +1,96 @@
+
+@keyframes auto-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.gallery {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  overflow-x: hidden; /* Scroll çubuğunu gizler */
+  animation: auto-scroll 40s linear infinite; /* Scroll'un otomatik hareketi */
+}
+
+.gallery::-webkit-scrollbar {
+  height: 8px;
+  --duration: 40s;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 400px;
+  border-radius: 24px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #111;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  opacity: 0.5;
+}
+
+.card-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Card specific backgrounds */
+.langfuse {
+  background: linear-gradient(to bottom right, #2c2c2c, #1a1a1a);
+}
+
+.llm-report {
+  background: linear-gradient(to bottom right, #ff7849, #ff9066);
+}
+
+.million {
+  background: linear-gradient(to bottom right, #1a1a1a, #2d1b47);
+}
+
+.querylab {
+  background: linear-gradient(to bottom right, #6b46c1, #805ad5);
+}

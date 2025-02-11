@@ -1,9 +1,9 @@
-import PortfolioPage from "./portfolio/page";
+import Home from "./home/page";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <PortfolioPage />
-    </div>
+    <>
+      <Home />
+    </>
   );
 }

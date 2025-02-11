@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./project.css";
 
 export default function Projects() {
@@ -6,7 +7,7 @@ export default function Projects() {
       <div className="container-project">
         <div className="grid-project">
           <div className="card-project">
-            <img src={"./img/advice.png"} alt="" />
+            <Image width={500} height={500} src="/img/advice.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a
@@ -20,7 +21,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card-project">
-            <img src={"./img/satis.png"} alt="" />
+            <Image width={500} height={500} src="/img/satis.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a
@@ -34,7 +35,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card-project">
-            <img src={"./img/learn.png"} alt="" />
+            <Image width={300} height={300} src="/img/learn.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a href="https://learning-figma.vercel.app/" target="_blank">
@@ -45,7 +46,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card-project">
-            <img src={"./img/learn.png"} alt="" />
+            <Image width={300} height={300} src="/img/learn.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a
@@ -59,7 +60,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card-project">
-            <img src={"./img/learn.png"} alt="" />
+            <Image width={300} height={300} src="/img/learn.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a href="https://typemaster-psi.vercel.app/" target="_blank">
@@ -70,7 +71,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card-project">
-            <img src={"./img/learn.png"} alt="" />
+            <Image width={300} height={300} src="/img/learn.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a
@@ -84,7 +85,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card-project">
-            <img src={"./img/learn.png"} alt="" />
+            <Image width={300} height={300} src="/img/learn.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a href="https://blog-page-css.vercel.app/" target="_blank">
@@ -95,7 +96,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card-project">
-            <img src={"./img/learn.png"} alt="" />
+            <Image width={300} height={300} src="/img/learn.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a href="https://hero-saas.vercel.app/" target="_blank">
@@ -106,7 +107,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card-project">
-            <img src={"./img/learn.png"} alt="" />
+            <Image width={300} height={300} src="/img/learn.png" alt="" />
             <div className="card-project-content">
               <h3 className="card-project-title">
                 <a href="https://banner-sable.vercel.app/" target="_blank">
