@@ -8,7 +8,7 @@ export default function Contact() {
           <div className="contact-content">
             <h2 className="contact-title">Let's Connect</h2>
             <p className="contact-description">
-              I'm always interested in hearing about new projects and
+              I&apos;m always interested in hearing about new projects and
               opportunities.
             </p>
             <div className="social-links">

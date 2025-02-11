@@ -14,7 +14,7 @@ export default function Hero() {
           <h1 className="hero-title">Frontend Developer</h1>
           <h2 className="hero-subtitle">Creating Modern Web Experiences</h2>
           <p className="hero-description">
-            Hello! I'm Ece Sema Bekdemir, a software developer and web
+            Hello! I&apos;m Ece Sema Bekdemir, a software developer and web
             developer. I love dancing with code and creating new things in the
             digital world. This website is a window into my world. Here, you can
             find my software projects, thoughts on technology, and learn more

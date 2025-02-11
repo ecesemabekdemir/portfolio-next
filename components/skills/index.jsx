@@ -4,7 +4,7 @@ export default function Skills() {
     <>
       <section className="skills" id="skills">
         <div className="container">
-          <h2 className="section-title">Skills & Expertise</h2>
+          <h2 className="section-title">Skills &amp; Expertise</h2>
           <div className="skills-grid">
             {[
               "Frontend Development",
