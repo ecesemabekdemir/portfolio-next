@@ -93,13 +93,12 @@ h4 {
   width: 100%;
 }
 
-/* Hero Section */
+/* -------------------------------------------Hero Section */
 .hero {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  padding: 8rem 0 4rem;
+
+display: flex;
+justify-content: space-between;
+  padding: 5rem 0 2rem;
   position: relative;
 }
 
@@ -119,13 +118,13 @@ h4 {
 .hero-subtitle {
   font-size: 1.5rem;
   color: var(--pink);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hero-description {
   font-size: 1.1rem;
-  margin-bottom: 3rem;
-  max-width: 500px;
+  margin-bottom: 1rem;
+
 }
 
 .hero-image-container {
@@ -144,7 +143,7 @@ h4 {
   /* box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1); */
 }
 
-/* Projects Section */
+/* ------------------------------------------Projects Section */
 .projects {
   padding: 8rem 0;
   background: var(--pink);
@@ -159,7 +158,7 @@ h4 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3,1fr);
   gap: 2rem;
 }
 
@@ -210,20 +209,21 @@ h4 {
   transform: translateX(5px);
 }
 
-/* Skills Section */
+/* --------------------------------------------------------------Skills Section */
 .skills {
-  padding: 8rem 0;
+  padding: 4rem 0;
   background: var(--cream);
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(6,1fr);
   gap: 2rem;
 }
 
 .skill-card {
-  padding: 2rem;
+  width: 250px;
+  padding: 4rem;
   background: white;
   border-radius: 20px;
   text-align: center;
@@ -281,9 +281,9 @@ h4 {
 }
 
 
-/* About Content Styles */
+/*-------------------------------------- About Content Styles */
 .about-content {
-  padding: 8rem 0;
+  padding: 4rem 0;
   background: var(--cream);
 }
 
@@ -348,6 +348,41 @@ h4 {
 .timeline h4 {
   color: var(--coral);
   margin-bottom: 0.5rem;
+}
+
+.cv-button {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: var(--coral);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: var(--transition);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cv-button:hover {
+  background-color: var(--pink);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-text {
+  margin-right: 8px;
+}
+
+.download-icon {
+  width: 20px;
+  height: 20px;
+  transition: var(--transition);
+}
+
+.cv-button:hover .download-icon {
+  transform: translateY(2px);
 }
 
 
