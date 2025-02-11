@@ -4,7 +4,7 @@
     "title": "advice-generator-app",
     "description": "A full-stack e-commerce solution built with Next.js and Stripe integration.",
     "image": "/img/advice.png",
-    "category": "Full Stack",
+    "category": "CSS",
     "githubLink": "https://github.com",
     "liveLink": "https://advice-generator-app-hazel-ten.vercel.app/"
   },
