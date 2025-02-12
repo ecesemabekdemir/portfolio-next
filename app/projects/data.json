@@ -67,7 +67,7 @@
     "id": 7,
     "title": "Products",
     "description": "A fully functional e-commerce website built with Next.js and CSS, allowing users to filter and search for products seamlessly. The modern and user-friendly interface provides easy access to products across various categories. Additionally, the site offers a customizable dark mode option for a dynamic and stylish experience.",
-    "image": "/img/quiz.png",
+    "image": "/img/product.png",
     "category": "Frontend",
     "githubLink": "https://github.com/ecesemabekdemir/productNext",
     "liveLink": "https://product-next-beta.vercel.app/"
