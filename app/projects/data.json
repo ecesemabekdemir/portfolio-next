@@ -72,4 +72,14 @@
     "githubLink": "https://github.com/ecesemabekdemir/productNext",
     "liveLink": "https://product-next-beta.vercel.app/"
   }
+  ,
+  {
+    "id": 8,
+    "title": "Pomodoro",
+    "description": "A fully functional Pomodoro timer built with Next.js and CSS, designed to help users boost productivity and manage their time effectively. This sleek and intuitive interface allows users to easily start, pause, and reset their timer, with clear visual cues for work and break intervals. The application also includes a customizable dark mode option, providing a visually pleasing experience while promoting focus and concentration. Whether for work or study, this Pomodoro timer offers a seamless and user-friendly solution to improve time management and enhance focus.",
+    "image": "/img/pomodoro.png",
+    "category": "Frontend",
+    "githubLink": "https://github.com/ecesemabekdemir/pomodoro",
+    "liveLink": "https://pomodoro-drab-tau.vercel.app/"
+  }
 ]
