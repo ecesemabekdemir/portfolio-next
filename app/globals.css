@@ -145,14 +145,14 @@ justify-content: space-between;
 
 /* ------------------------------------------Projects Section */
 .projects {
-  padding: 8rem 0;
+  padding: 0;
   background: var(--pink);
   color: var(--cream);
 }
 
 .section-title {
   font-size: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -163,6 +163,7 @@ justify-content: space-between;
 }
 
 .project-card {
+ 
   background: var(--cream);
   border-radius: 20px;
   overflow: hidden;
@@ -225,7 +226,7 @@ justify-content: space-between;
   width: 250px;
   padding: 4rem;
   background: white;
-  border-radius: 20px;
+  border-radius: 50%;
   text-align: center;
   transition: var(--transition);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

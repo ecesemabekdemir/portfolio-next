@@ -24,6 +24,16 @@ const projectsData = [
     githubLink: "https://github.com/ecesemabekdemir/websiteApp",
     liveLink: "https://website-app-sandy.vercel.app/",
   },
+  {
+    id: 6,
+    title: "Quiz App",
+    description:
+      "A quiz application built with Next.js and CSS, featuring four categories and a customizable dark mode. The user-friendly interface allows seamless navigation between categories, enhancing the overall quiz experience.",
+    image: "/img/quiz.png",
+    category: "Frontend",
+    githubLink: "https://github.com/ecesemabekdemir/quiz-with-next",
+    liveLink: "https://quiz-with-next.vercel.app/",
+  },
 ];
 
 export default function Home() {
