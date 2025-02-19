@@ -38,66 +38,10 @@ h4 {
   padding: 0 2rem;
 }
 
-/* Navigation Styles */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(253, 246, 236, 0.95);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  padding: 1rem 0;
-  transition: var(--transition);
-}
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--coral);
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 3rem;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--text-dark);
-  font-weight: 500;
-  position: relative;
-  padding: 0.5rem 0;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--pink);
-  transition: var(--transition);
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
 /* -------------------------------------------Hero Section */
 .hero {
-
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   padding: 5rem 0 2rem;
   position: relative;
 }
@@ -124,7 +68,6 @@ justify-content: space-between;
 .hero-description {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-
 }
 
 .hero-image-container {
@@ -158,12 +101,11 @@ justify-content: space-between;
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
 .project-card {
- 
   background: var(--cream);
   border-radius: 20px;
   overflow: hidden;
@@ -218,7 +160,7 @@ justify-content: space-between;
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
 }
 
@@ -243,7 +185,7 @@ justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-/* Contact Section */
+/*------------------------------------------------------------ Contact Section */
 .contact {
   padding: 2rem 0;
   background: var(--coral);
@@ -281,113 +223,6 @@ justify-content: space-between;
   transform: translateY(-5px);
 }
 
-
-/*-------------------------------------- About Content Styles */
-.about-content {
-  padding: 4rem 0;
-  background: var(--cream);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-.about-text p {
-  margin-bottom: 1.5rem;
-}
-
-.about-timeline h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: var(--coral);
-}
-
-.timeline {
-  list-style-type: none;
-  position: relative;
-}
-
-.timeline:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 2px;
-  background: var(--pink);
-}
-
-.timeline li {
-  margin-bottom: 2rem;
-  padding-left: 2rem;
-  position: relative;
-}
-
-.timeline li:before {
-  content: "";
-  position: absolute;
-  left: -6px;
-  top: 0;
-  width: 14px;
-  height: 14px;
-  background: var(--coral);
-  border-radius: 50%;
-}
-
-.timeline .date {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: var(--pink);
-  color: var(--cream);
-  border-radius: 15px;
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
-}
-
-.timeline h4 {
-  color: var(--coral);
-  margin-bottom: 0.5rem;
-}
-
-.cv-button {
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  background-color: var(--coral);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: var(--transition);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cv-button:hover {
-  background-color: var(--pink);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.button-text {
-  margin-right: 8px;
-}
-
-.download-icon {
-  width: 20px;
-  height: 20px;
-  transition: var(--transition);
-}
-
-.cv-button:hover .download-icon {
-  transform: translateY(2px);
-}
-
-
-
 /* project---------------------------*/
 .projects {
   padding: 8rem 0;
@@ -399,39 +234,6 @@ justify-content: space-between;
   font-size: 3rem;
   margin-bottom: 4rem;
   text-align: center;
-}
-
-
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 6rem 0;
-  }
-
-  .hero-description {
-    margin: 0 auto 3rem;
-  }
-
-  .hero-title {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-title {
-    font-size: 3rem;
-  }
 }
 
 /* Animations */
@@ -450,3 +252,101 @@ justify-content: space-between;
   animation: fadeIn 1s ease forwards;
 }
 
+/* -------------------------------------------------------------Responsive Design */
+@media (width < 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 6rem 0 0 0;
+  }
+
+  .hero-description {
+    margin: 0 auto 2rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .projects {
+    padding: 3rem 0;
+  }
+
+  .project-card {
+    width: 300px;
+    height: 300px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .project-image {
+   width: 100%;
+    height: 200px;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-link {
+    padding: 0.75rem 1rem;
+  }
+  .section-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills {
+    display: none;
+  }
+}
+
+@media (max-width < 425px) {
+  .nav-links {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

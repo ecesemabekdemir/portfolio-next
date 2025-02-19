@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Download } from "lucide-react";
+import "./about.css";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);

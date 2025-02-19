@@ -1,25 +1,29 @@
+import Link from "next/link";
+import "./nav.css";
+import MobileNav from "./mobile";
 export default function Nav() {
   return (
     <>
       <div className="nav">
         <div className="container nav-content">
-          <a href="#" className="nav-logo">
+          <Link href="/" className="nav-logo">
             SEMA BEKDEMIR
-          </a>
+          </Link>
           <ul className="nav-links">
             <li>
-              <a href="/home">Home</a>
+              <Link href="/home">Home</Link>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <Link href="/projects">Projects</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link href="#contact">Contact</Link>
             </li>
           </ul>
+          <MobileNav />
         </div>
       </div>
     </>
