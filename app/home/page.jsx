@@ -45,7 +45,7 @@ export default function Home() {
       <div className="projects" id="projects">
         <div className="container">
           <h2 className="section-title">Featured Projects</h2>
-          <div className="projects-grid">
+          <div className="projects-grid-main">
             {projectsData.map((project) => (
               <div key={project} className="project-card">
                 <Image

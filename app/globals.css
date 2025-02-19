@@ -99,7 +99,7 @@ h4 {
   text-align: center;
 }
 
-.projects-grid {
+.projects-grid-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -323,7 +323,7 @@ h4 {
     margin-bottom: 0.5rem;
   }
 
-  .projects-grid {
+  .projects-grid-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
