@@ -61,6 +61,7 @@
 #menu-toggle {
   display: none;
 }
+
 .nav-container {
   padding: 1rem;
   position: relative;
@@ -97,8 +98,8 @@
 .nav-links a:hover {
   color: #ff6b6b;
 }
-
-@media (max-width: 768px) {
+/*-----------------------------------responsive*/
+@media (width < 768px) {
   .menu-icon {
     display: flex;
   }
