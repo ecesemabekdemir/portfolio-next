@@ -1,5 +1,5 @@
 /* Navigation Styles */
-.nav {
+/* .nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,12 +9,12 @@
   z-index: 1000;
   padding: 1rem 0;
   transition: var(--transition);
-}
+} */
 
 .nav-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 }
 
 .nav-logo {
