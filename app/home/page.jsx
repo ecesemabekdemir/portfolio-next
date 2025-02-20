@@ -42,26 +42,28 @@ export default function Home() {
       <div className="container">
         <Hero />
       </div>
-      <div className="projects" id="projects">
+      <div className="projects" id="projects-main">
         <div className="container">
           <h2 className="section-title">Featured Projects</h2>
           <div className="projects-grid-main">
             {projectsData.map((project) => (
-              <div key={project} className="project-card">
+              <div key={project} className="project-card-main">
                 <Image
                   src={project.image}
                   alt={`Project ${project}`}
                   width={300}
                   height={200}
-                  className="project-image"
+                  className="project-image-main"
                 />
-                <div className="project-content">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
+                <div className="project-content-main">
+                  <h3 className="project-title-main">{project.title}</h3>
+                  <p className="project-description-main">
+                    {project.description}
+                  </p>
                   <Link
                     href={project.liveLink}
                     target="_blank"
-                    className="project-link"
+                    className="project-link-main"
                   >
                     View Project
                   </Link>

@@ -33,7 +33,6 @@ h4 {
 }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -42,32 +41,34 @@ h4 {
 .hero {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 0 2rem;
+  padding: 1rem;
   position: relative;
+  gap: 50px;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 
 .hero-title {
-  font-size: 5rem;
+  font-size: 8rem;
   line-height: 1.1;
   margin-bottom: 2rem;
   color: var(--coral);
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--pink);
   margin-bottom: 1rem;
 }
 
 .hero-description {
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 7rem;
+  opacity: 60%;
 }
 
 .hero-image-container {
@@ -87,16 +88,16 @@ h4 {
 }
 
 /* ------------------------------------------Projects Section */
-.projects {
-  padding: 0;
+#projects-main {
+  padding: 3rem 0 ;
   background: var(--pink);
   color: var(--cream);
 }
 
 .section-title {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .projects-grid-main {
@@ -105,73 +106,97 @@ h4 {
   gap: 2rem;
 }
 
-.project-card {
+.project-card-main {
   background: var(--cream);
   border-radius: 20px;
   overflow: hidden;
   transition: var(--transition);
 }
 
-.project-card:hover {
+.project-card-main:hover {
   transform: translateY(-10px);
 }
 
-.project-image {
+.project-image-main {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 }
 
-.project-content {
+.project-content-main {
   padding: 2rem;
 }
 
-.project-title {
+.project-title-main {
   color: var(--coral);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
 
-.project-description {
+.project-description-main {
   color: var(--text-dark);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
 }
 
-.project-link {
+.project-link-main {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   background: var(--coral);
   color: var(--cream);
   text-decoration: none;
   border-radius: 25px;
   transition: var(--transition);
+  font-size: 0.7rem;
 }
 
-.project-link:hover {
+.project-link-main:hover {
   background: var(--pink);
   transform: translateX(5px);
 }
 
 /* --------------------------------------------------------------Skills Section */
 .skills {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   background: var(--cream);
+  overflow: hidden;
+}
+
+.skills-grid-container {
+  overflow: hidden;
+  width: 100%;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2rem;
+  display: flex;
+  animation: slideSkills 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes slideSkills {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .skill-card {
-  width: 250px;
+width: 300px;
   padding: 4rem;
   background: white;
   border-radius: 50%;
   text-align: center;
   transition: var(--transition);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.skill-card h3 {
+  font-size: 2rem;
+  opacity: 80%;
 }
 
 .skill-card:hover {
@@ -180,10 +205,11 @@ h4 {
 }
 
 .skill-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--coral);
   margin-bottom: 1rem;
 }
+
 
 /*------------------------------------------------------------ Contact Section */
 .contact {
@@ -223,18 +249,6 @@ h4 {
   transform: translateY(-5px);
 }
 
-/* project---------------------------*/
-.projects {
-  padding: 8rem 0;
-  background: var(--pink);
-  color: var(--cream);
-}
-
-.section-title {
-  font-size: 3rem;
-  margin-bottom: 4rem;
-  text-align: center;
-}
 
 /* Animations */
 @keyframes fadeIn {
@@ -283,7 +297,7 @@ h4 {
     height: 200px;
   }
 
-  .projects {
+  #projects-main {
     padding: 1rem 0;
   }
 
@@ -292,37 +306,38 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .project-card {
+  .project-card-main {
     width: 300px;
     height: 300px;
   }
 
-  .project-card:hover {
+  .project-card-main:hover {
     transform: translateY(-10px);
   }
 
-  .project-image {
+  .project-image-main {
     width: 100%;
     height: 200px;
   }
 
-  .project-content {
+  .project-content-main {
     padding: 1rem;
   }
 
-  .project-title {
+  .project-title-main {
     margin-bottom: 0.5rem;
     font-size: 1rem;
   }
 
-  .project-description {
+  .project-description-main {
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
   }
 
-  .project-link {
+  .project-link-main {
     padding: 0.75rem 1rem;
   }
+
   .section-title {
     font-size: 1rem;
     margin-bottom: 0.5rem;

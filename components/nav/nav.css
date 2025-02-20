@@ -1,24 +1,21 @@
 /* Navigation Styles */
-/* .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.nav-container {
+
   background: rgba(253, 246, 236, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;
   transition: var(--transition);
-} */
+}
 
 .nav-content {
   display: flex;
   justify-content: space-between;
-
+  padding:1rem 1.5rem;
 }
 
 .nav-logo {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--coral);
   text-decoration: none;
@@ -26,7 +23,7 @@
 
 .nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -34,13 +31,11 @@
   text-decoration: none;
   color: var(--text-dark);
   font-weight: 500;
-  position: relative;
   padding: 0.5rem 0;
 }
 
 .nav-links a::after {
   content: "";
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
@@ -61,10 +56,6 @@
   display: none;
 }
 
-.nav-container {
-  padding: 1rem;
-  position: relative;
-}
 
 .menu-icon {
   display: none;
@@ -84,7 +75,6 @@
   display: flex;
   gap: 2rem;
   list-style: none;
-  width: 200px;
 }
 
 .nav-links a {
