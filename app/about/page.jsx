@@ -16,16 +16,18 @@ export default function About() {
   return (
     <main>
       <section className="container">
-        <div className="hero">
-          <div className={`hero-content ${isVisible ? "animate" : ""}`}>
-            <h1 className="hero-title">About Me</h1>
-            <h2 className="hero-subtitle">My Journey in Web Development</h2>
-            <p className="hero-description">
+        <div className="hero-about">
+          <div className={`hero-content-about ${isVisible ? "animate" : ""}`}>
+            <h1 className="hero-title-about">About Me</h1>
+            <h2 className="hero-subtitle-about">
+              My Journey in Web Development
+            </h2>
+            <p className="hero-description-about">
               From interior architecture to frontend development, my path has
               been driven by a passion for design and technology.
             </p>
           </div>
-          <div className="hero-image-container">
+          <div className="hero-image-container-about">
             <div className="hero-image">
               <Image
                 src="/img/user.png"
