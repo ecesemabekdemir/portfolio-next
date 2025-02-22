@@ -69,7 +69,7 @@ export default function About() {
 
               <Link
                 target="_blank"
-                href={"/dosya/sema.pdf"}
+                href={"/dosya/semabekdemir.pdf"}
                 className="cv-button"
               >
                 <span className="button-text">
